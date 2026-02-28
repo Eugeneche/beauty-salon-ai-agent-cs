@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Administrátor pro rezervace 24/7 | Automatizace podnikání</title>
+    <meta name="description" content="Přirozená komunikace, synchronizace s administrativními službami a žádné chyby. Vyzkoušejte demo!">
+    <!-- Подключение Tailwind CSS (Стили) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Подключение иконок FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Шрифты Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta property="og:title" content="AI Administrátor, konzultant a prodejce pracující 24/7">
+    <meta property="og:description" content="Přirozená komunikace, synchronizace s administrativními službami a žádné chyby. Vyzkoušejte demo!">
+    <meta property="og:image" content="https://eugeneche.github.io/beauty-salon-ai-agent-cs/og-image.jpg">
+    <meta property="og:url" content="https://eugeneche.github.io/beauty-salon-ai-agent-cs/">
+    <meta property="og:type" content="website">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="bg-white shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <i class="fa-solid fa-robot text-indigo-600 text-2xl mr-2"></i>
+                    <span class="font-bold text-sm sm:text-xl tracking-tight">AI Admin Pro</span>
+                </div>
+                <div class="hidden lg:block">
+                    <a href="#features" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Funkce</a>
+                    <a href="#roi" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Výhody</a>
+                    <a href="#demo" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Detaily</a>
+                    <a href="#approach" class="text-gray-600 hover:text-indigo-600 px-3 py-2 font-medium">Individuální přístup</a>
+                </div>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="https://t.me/beauy_salon_bot"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 mr-2 rounded-full font-medium transition duration-300">
+                        Demo
+                    </a>
+                    <a href="#contact" class="bg-violet-600 hover:bg-violet-700 text-white px-5 py-2 rounded-full font-medium transition duration-300">
+                        Objednat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 hero-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-indigo-600 uppercase bg-indigo-100 rounded-full">
+                    Nová technologie 2026
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    Váš ideální administrátor <br>
+                    a prodejce –<br>
+                    <span class="gradient-text">Umělá inteligence</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Zapomeňte na zmeškané hovory. Náš AI agent nejen rezervuje, ale 
+                    <span class="font-semibold text-indigo-600">udržuje klienty</span>, 
+                    radí se službami a 
+                    <span class="font-semibold text-indigo-600">prodává 24/7</span>, 
+                    komunikuje v několika jazycích a automaticky zadává záznamy do CRM systémů.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://t.me/beauy_salon_bot" class="bg-indigo-600 text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:shadow-xl hover:bg-indigo-700 transition transform hover:-translate-y-1">
+                        Vyzkoušet demo
+                    </a>
+                    <a href="#features" class="bg-white text-indigo-600 border border-indigo-200 px-8 py-4 rounded-lg font-bold shadow hover:bg-gray-50 transition">
+                        Zjistit více
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-indigo-300 to-purple-300 rounded-full filter blur-3xl opacity-30 animate-pulse"></div>
+                <img src="images/languages_select_cs.png" alt="Ukázka AI chatu" class="relative rounded-3xl shadow-2xl border-8 border-white w-64 md:w-80 transform rotate-3 hover:rotate-0 transition duration-500">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Více než jen chatbot</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Vytvořili jsme ekosystém, který pokrývá 99 % rutinních úkolů administrátora při komunikaci s klienty.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4 text-indigo-600">
+                        <i class="fa-solid fa-comments text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Živý dialog</h3>
+                    <p class="text-gray-600 text-sm">Rozumí běžné řeči ("chci na nehty v úterý") a nenutí vás mačkat tlačítka v menu.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 text-purple-600">
+                        <i class="fa-solid fa-calendar-check text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Plná synchronizace</h3>
+                    <p class="text-gray-600 text-sm">Okamžitá rezervace do Google Kalendáře specialisty. Žádné překryvy ani dvojité rezervace.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 text-blue-600">
+                        <i class="fa-solid fa-language text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Vícejazyčnost</h3>
+                    <p class="text-gray-600 text-sm">Plynule komunikuje v jazycích vašich klientů.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-lg transition duration-300 border border-gray-100">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-green-600">
+                        <i class="fa-solid fa-bell text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Chytrá připomenutí</h3>
+                    <p class="text-gray-600 text-sm">Automaticky připomíná klientovi nadcházející návštěvu, čímž snižuje počet neúčastí.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Proč zvolit AI?</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-10">
+
+<!--                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 opacity-70">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-400">Обычный администратор</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Спит ночью, пропускает клиентов</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Может ошибиться с датой</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Забывает отправить напоминание</li>
+                        <li class="flex items-center"><i class="fa-solid fa-xmark text-red-500 mr-3 w-6"></i> Стоит от $800/мес</li>
+                    </ul>
+                </div> -->
+
+                <div class="bg-indigo-900 p-8 rounded-2xl border border-indigo-500 shadow-2xl transform md:scale-105" style="width: 50%; min-width: fit-content; margin: 0 auto;">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-2xl font-bold text-white">Náš AI Agent</h3>
+                        <!-- <span class="bg-green-500 text-xs font-bold px-2 py-1 rounded text-white">РЕКОМЕНДУЕМ</span> -->
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-3 w-6"></i> Odpovídá okamžitě 24/7</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-3 w-6"></i> 100% přesnost v kalendáři</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-3 w-6"></i> Automatická kontrola návštěv</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-green-400 mr-3 w-6"></i> Návratnost za 1 týden</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roi" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">-40%</div>
+                    <p class="text-gray-600 font-medium">Snížení neúčastí (No-Show)</p>
+                </div>
+                <div class="p-6 border-l-0 md:border-l border-gray-200">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">24/7</div>
+                    <p class="text-gray-600 font-medium">Příjem rezervací bez víkendů</p>
+                </div>
+                <div class="p-6 border-l-0 md:border-l border-gray-200">
+                    <div class="text-5xl font-bold text-indigo-600 mb-2">0%</div>
+                    <p class="text-gray-600 font-medium">Chyb v rozvrhu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Jak to vypadá uvnitř</h2>
+                <p class="text-gray-600">Dokonalý pořádek ve vašich firemních procesech</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-4 rounded-xl shadow-md">
+                    <h4 class="font-bold mb-4 text-gray-700">📅 Google Kalendář specialisty</h4>
+                    <img src="images/google_calendar.jpg" alt="Synchronizace kalendáře" class="rounded-lg w-full object-cover">
+                    <p class="mt-4 text-sm text-gray-500">Jasné události se jmény klientů a službami. Barevné rozlišení.</p>
+                </div>
+
+                <div class="bg-white p-4 rounded-xl shadow-md">
+                    <h4 class="font-bold mb-4 text-gray-700">📊 CRM (Google Tabulky)</h4>
+                    <img src="images/clients_table.jpg" alt="Tabulka CRM" class="rounded-lg w-full object-cover">
+                    <p class="mt-4 text-sm text-gray-500">Automatická správa databáze klientů, statusů a historie návštěv.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГНУЧКЕ НАЛАШТУВАННЯ (CUSTOMIZATION) -->
+    <section id="approach" class="py-20 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-purple-600 uppercase bg-purple-100 rounded-full">
+                    Individuální přístup
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Flexibilní nastavení pro váš byznys</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Toto není jen "šablonovitý bot". Učíme AI model specifikům právě vašeho podnikání, aby se stal plnohodnotnou součástí týmu.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: База Знань -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-indigo-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-indigo-50 rounded-full group-hover:bg-indigo-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-book-open text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Vaše znalostní báze</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Nahrajeme do bota váš ceník, storno podmínky, popis služeb a odpovědi na časté dotazy. Bot bude vědět o vašem podnikání vše.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tone of Voice -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-purple-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-purple-50 rounded-full group-hover:bg-purple-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-sliders text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Styl komunikace</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Přísný a formální (vykání) nebo přátelský s emotikony? Sami si zvolíte Tone of Voice, aby bot komunikoval tak, jak je u vás zvykem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Легке управління -->
+                <div class="group p-8 bg-white rounded-2xl border border-gray-200 hover:border-pink-500 hover:shadow-xl transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-pink-50 rounded-full group-hover:bg-pink-100 transition"></div>
+                    <div class="relative z-10">
+                        <div class="w-14 h-14 bg-pink-600 rounded-xl flex items-center justify-center mb-6 text-white shadow-lg">
+                            <i class="fa-solid fa-users-gear text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Specialisté a rozvrh</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Nový specialista? Změnila se cena? Dovolená? Tyto údaje můžete změnit za 1 minutu prostřednictvím jednoduché Google Tabulky bez programátora.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Jste připraveni automatizovat své podnikání?</h2>
+            <p class="text-indigo-100 text-lg mb-10">
+                Nabízíme nastavení "na klíč". Získejte bezplatnou konzultaci.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+                <a href="https://t.me/eugene_ch" target="_blank"
+                    class="bg-white text-indigo-600 px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-gray-100 transition flex items-center justify-center">
+                    <i class="fa-brands fa-telegram text-2xl mr-3"></i> Napsat na Telegram
+                </a>
+                <a href="viber://chat?number=+380990020375" target="_blank"
+                    class="bg-[#7360f2] text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-[#6050dc] transition flex items-center justify-center">
+                    <i class="fa-brands fa-viber text-2xl mr-3"></i> Napsat na Viber
+                </a>
+                <a href="https://wa.me/+420770671058" target="_blank"
+                    class="bg-[#25D366] text-white px-8 py-4 rounded-lg font-bold shadow-lg hover:bg-[#20bd5a] transition flex items-center justify-center">
+                    <i class="fa-brands fa-whatsapp text-2xl mr-3"></i> Napsat na WhatsApp
+                </a>
+                <a href="mailto:dev.websolutionsforyou@gmail.com"
+                    class="bg-indigo-700 border border-indigo-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-indigo-800 transition flex items-center justify-center">
+                    <i class="fa-solid fa-envelope text-xl mr-3"></i> Poslat e-mail
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 - 2026 Web Solutions For You. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
